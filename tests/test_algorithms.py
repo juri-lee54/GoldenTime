@@ -251,4 +251,3 @@ class TestEdgeCasesAndFallbacks:
         assert results[0]['is_fallback'] is True
         # 그러나 시스템이 멈추지 않고 가장 가까운 병원으로 대체 배정 완료
         assert results[0]['hospital_name'] != ""
-

@@ -2,4 +2,3 @@
 """
 Golden Time test suite
 """
-

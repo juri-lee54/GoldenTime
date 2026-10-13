@@ -18,4 +18,3 @@ def test_key_validation_helpers():
     # 기본 예시값 또는 빈값일 때 False를 안전하게 반환하는지
     assert isinstance(settings.has_kakao_key(), bool)
     assert isinstance(settings.has_public_data_key(), bool)
-
