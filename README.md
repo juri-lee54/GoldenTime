@@ -158,7 +158,7 @@ $$B_j \leftarrow \max(0, B_j - 1)$$
 
 ---
 
-## 6. 프로젝트 구조 (Project Structure)
+## 6. 프로젝트 구조 
 
 ```text
 GoldenTime/
@@ -186,7 +186,7 @@ GoldenTime/
 
 ---
 
-## 7. 설치 및 실행 가이드 (Getting Started)
+## 7. 설치 및 실행 가이드
 
 ### 7.1. 가상환경 생성 및 패키지 설치
 
@@ -206,7 +206,7 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
-### 7.2. 단위 테스트 및 린트 검사 (Testing & Linting)
+### 7.2. 단위 테스트 및 린트 검사
 
 ```bash
 # pytest 단위 테스트 실행 (14개 케이스 전체 검증)
