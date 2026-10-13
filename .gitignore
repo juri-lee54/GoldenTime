@@ -1,0 +1,44 @@
+# Environment variables (Sensitive keys)
+.env
+.env.local
+.env.*.local
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary data / logs
+*.log
+
+# Streamlit secrets & credentials
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Data files & datasets (Do not commit to GitHub)
+data/**/*.csv
+data/*.csv
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+!data/**/.gitkeep
