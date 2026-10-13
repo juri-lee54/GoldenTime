@@ -192,14 +192,54 @@ class EmergencyDataCollector:
         logger.info(f"[데모 시드] {city} 권역 가상 응급의료기관 시드 데이터셋 생성 중...")
 
         seed_hospitals = [
-            {"hospital_id": "SEED_01", "name": "서울대학교병원 응급의료센터", "phone": "02-2072-2474", "available_beds": 8, "latitude": 37.5796, "longitude": 126.9990, "dgidIdName": "내과,외과,신경외과,흉부외과,응급의학과,정형외과", "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy4": "Y", "MKioskTy11": "Y"},
-            {"hospital_id": "SEED_02", "name": "연세대학교 세브란스병원", "phone": "02-2227-7777", "available_beds": 6, "latitude": 37.5623, "longitude": 126.9408, "dgidIdName": "내과,외과,신경외과,소아청소년과,응급의학과", "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy6": "Y", "MKioskTy7": "Y"},
-            {"hospital_id": "SEED_03", "name": "강북삼성병원 응급실", "phone": "02-2001-1114", "available_beds": 5, "latitude": 37.5684, "longitude": 126.9678, "dgidIdName": "내과,외과,신경과,정형외과,응급의학과", "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "N", "MKioskTy4": "Y"},
-            {"hospital_id": "SEED_04", "name": "서울적십자병원 응급실", "phone": "02-2002-8000", "available_beds": 5, "latitude": 37.5678, "longitude": 126.9664, "dgidIdName": "내과,외과,정형외과,가정의학과", "MKioskTy1": "N", "MKioskTy2": "N", "MKioskTy3": "N", "MKioskTy6": "Y"},
-            {"hospital_id": "SEED_05", "name": "가톨릭대학교 서울성모병원", "phone": "02-2258-2005", "available_beds": 7, "latitude": 37.5019, "longitude": 127.0048, "dgidIdName": "내과,외과,신경외과,흉부외과,정신건강의학과,응급의학과", "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy8": "Y", "MKioskTy10": "Y"},
-            {"hospital_id": "SEED_06", "name": "한양대학교병원 응급의료센터", "phone": "02-2290-8282", "available_beds": 4, "latitude": 37.5597, "longitude": 127.0438, "dgidIdName": "내과,외과,정형외과,신경외과,성형외과", "MKioskTy1": "Y", "MKioskTy3": "Y", "MKioskTy4": "Y", "MKioskTy5": "Y"},
-            {"hospital_id": "SEED_07", "name": "중앙대학교병원 응급의료센터", "phone": "02-6299-1114", "available_beds": 3, "latitude": 37.5067, "longitude": 126.9602, "dgidIdName": "내과,외과,소아청소년과,이비인후과", "MKioskTy1": "N", "MKioskTy3": "Y", "MKioskTy6": "Y"},
-            {"hospital_id": "SEED_08", "name": "고려대학교 안암병원", "phone": "02-920-5114", "available_beds": 6, "latitude": 37.5871, "longitude": 127.0333, "dgidIdName": "내과,외과,신경외과,흉부외과,응급의학과", "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy7": "Y"},
+            {
+                "hospital_id": "SEED_01", "name": "서울대학교병원 응급의료센터", "phone": "02-2072-2474",
+                "available_beds": 8, "latitude": 37.5796, "longitude": 126.9990,
+                "dgidIdName": "내과,외과,신경외과,흉부외과,응급의학과,정형외과",
+                "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy4": "Y", "MKioskTy11": "Y"
+            },
+            {
+                "hospital_id": "SEED_02", "name": "연세대학교 세브란스병원", "phone": "02-2227-7777",
+                "available_beds": 6, "latitude": 37.5623, "longitude": 126.9408,
+                "dgidIdName": "내과,외과,신경외과,소아청소년과,응급의학과",
+                "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy6": "Y", "MKioskTy7": "Y"
+            },
+            {
+                "hospital_id": "SEED_03", "name": "강북삼성병원 응급실", "phone": "02-2001-1114",
+                "available_beds": 5, "latitude": 37.5684, "longitude": 126.9678,
+                "dgidIdName": "내과,외과,신경과,정형외과,응급의학과",
+                "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "N", "MKioskTy4": "Y"
+            },
+            {
+                "hospital_id": "SEED_04", "name": "서울적십자병원 응급실", "phone": "02-2002-8000",
+                "available_beds": 5, "latitude": 37.5678, "longitude": 126.9664,
+                "dgidIdName": "내과,외과,정형외과,가정의학과",
+                "MKioskTy1": "N", "MKioskTy2": "N", "MKioskTy3": "N", "MKioskTy6": "Y"
+            },
+            {
+                "hospital_id": "SEED_05", "name": "가톨릭대학교 서울성모병원", "phone": "02-2258-2005",
+                "available_beds": 7, "latitude": 37.5019, "longitude": 127.0048,
+                "dgidIdName": "내과,외과,신경외과,흉부외과,정신건강의학과,응급의학과",
+                "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy8": "Y", "MKioskTy10": "Y"
+            },
+            {
+                "hospital_id": "SEED_06", "name": "한양대학교병원 응급의료센터", "phone": "02-2290-8282",
+                "available_beds": 4, "latitude": 37.5597, "longitude": 127.0438,
+                "dgidIdName": "내과,외과,정형외과,신경외과,성형외과",
+                "MKioskTy1": "Y", "MKioskTy3": "Y", "MKioskTy4": "Y", "MKioskTy5": "Y"
+            },
+            {
+                "hospital_id": "SEED_07", "name": "중앙대학교병원 응급의료센터", "phone": "02-6299-1114",
+                "available_beds": 3, "latitude": 37.5067, "longitude": 126.9602,
+                "dgidIdName": "내과,외과,소아청소년과,이비인후과",
+                "MKioskTy1": "N", "MKioskTy3": "Y", "MKioskTy6": "Y"
+            },
+            {
+                "hospital_id": "SEED_08", "name": "고려대학교 안암병원", "phone": "02-920-5114",
+                "available_beds": 6, "latitude": 37.5871, "longitude": 127.0333,
+                "dgidIdName": "내과,외과,신경외과,흉부외과,응급의학과",
+                "MKioskTy1": "Y", "MKioskTy2": "Y", "MKioskTy3": "Y", "MKioskTy7": "Y"
+            },
         ]
 
         df = pd.DataFrame(seed_hospitals)

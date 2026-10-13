@@ -73,4 +73,3 @@ class Settings:
 
 # 전역 싱글톤 설정 인스턴스
 settings = Settings()
-

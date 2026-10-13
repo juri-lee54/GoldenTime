@@ -42,3 +42,8 @@ data/*.csv
 *.xlsx
 *.parquet
 !data/**/.gitkeep
+
+# Pytest & Coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
